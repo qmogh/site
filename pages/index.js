@@ -13,7 +13,6 @@ import {
   BlockLink,
   Image
 } from 'rebass'
-import { fontSize, responsiveStyle } from 'styled-system'
 import { map, merge, lowerCase, kebabCase } from 'lodash'
 import theme, { colors, mx } from '../style'
 import {
@@ -41,8 +40,11 @@ const Masthead = Flex.extend.attrs({
   textAlign: ['center', 'left'],
   px: 3
 })`
-  ${responsiveStyle('min-height', 'minHeight')}
-  ${responsiveStyle('text-align', 'textAlign')}
+  text-align: center;
+  ${mx[1]} {
+    min-height: 100vh;
+    text-align: left;
+  }
 `
 const Name = Heading.extend.attrs({ f: 6, m: 0 })`
   font-weight: 900;
@@ -63,12 +65,23 @@ const Status = Text.extend.attrs({ f: 3, color: 'slate', mt: 0, mb: 4 })`
 `
 
 const PortraitBox = props => (
-  <Flex column justify="center" align={['center', 'flex-end']} flex="1 1 auto" p={[3, 4]} {...props} />
+  <Flex
+    column
+    justify="center"
+    align={['center', 'flex-end']}
+    flex="1 1 auto"
+    p={[3, 4]}
+    {...props}
+  />
 )
-const Portrait = FloatLink.withComponent(Image).extend.attrs({ maxHeight: ['40vh', '80vh'], r: [12, 16, 24] })`
+const Portrait = FloatLink.withComponent(Image).extend`
+  border-radius: 12px;
+  max-height: 40vh;
   max-width: 50vw;
-  ${responsiveStyle('max-height', 'maxHeight')}
-  ${responsiveStyle('border-radius', 'r')}
+  ${mx[0]} {
+    border-radius: 24px;
+    max-height: 80vh;
+  }
 `
 
 const NameBox = Column.extend.attrs({ py: 2 })`
@@ -90,7 +103,10 @@ export default () => (
         <Name>Lachlan Campbell</Name>
         <Bio>Web designer-developer and high schooler.</Bio>
         <Box>
-          <Status>web @ <Link href="https://hackclub.com" color="#e42d40">hack club</Link></Status>
+          <Status>
+            {'web @ '}
+            <Link href="https://hackclub.com" color="#e42d40">hack club</Link>
+          </Status>
         </Box>
         <Flex align="center" justify={['center', 'flex-start']}>
           <Avatar

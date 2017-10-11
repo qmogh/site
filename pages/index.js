@@ -36,12 +36,10 @@ const sections = [
 
 const Masthead = Flex.extend.attrs({
   direction: ['column', 'row'],
-  minHeight: [null, '100vh'],
-  textAlign: ['center', 'left'],
   px: 3
 })`
   text-align: center;
-  ${mx[1]} {
+  ${mx[0]} {
     min-height: 100vh;
     text-align: left;
   }
@@ -71,6 +69,7 @@ const PortraitBox = props => (
     align={['center', 'flex-end']}
     flex="1 1 auto"
     p={[3, 4]}
+    pr={[null, 0]}
     {...props}
   />
 )
@@ -84,7 +83,7 @@ const Portrait = FloatLink.withComponent(Image).extend`
   }
 `
 
-const NameBox = Column.extend.attrs({ py: 2 })`
+const NameBox = Column.extend.attrs({ py: 2, pl: [null, 4] })`
   ${mx[0]} {
     display: flex;
     flex-direction: column;

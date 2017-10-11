@@ -126,7 +126,7 @@ export const Project = ({ name, url, description, color = 'white' }) => (
     id={kebabCase(deburr(name))}
     bg={color}
     color="white"
-    w={[1, 1 / 3]}
+    w={[1, 2 / 5, 1 / 3]}
     m={[0, 2]}
     mt={2}
     p={3}
@@ -170,4 +170,3 @@ export const Footer = ({ file = 'index', ...props }) => (
     </Link>
   </Text>
 )
-

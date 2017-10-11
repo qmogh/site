@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {
   Flex,
   Box,
@@ -34,27 +33,29 @@ const sections = [
   ['Previously', 'access_time', prev]
 ]
 
-const Masthead = styled(Flex).attrs({ direction: ['column', 'row'], minHeight: [null, '100vh'] })`
+const Masthead = Flex.extend.attrs({
+  direction: ['column', 'row'],
+  minHeight: [null, '100vh'],
+  textAlign: ['center', 'left'],
+  px: 3
+})`
   ${responsiveStyle('min-height', 'minHeight')}
+  ${responsiveStyle('text-align', 'textAlign')}
 `
-const Name = styled(Heading).attrs({ is: 'h1', f: [5, 6], m: 0 })`
+const Name = Heading.extend.attrs({ f: 6, m: 0 })`
   font-weight: 800;
   line-height: 1;
 `
-const Bio = styled(Subhead).attrs({ is: 'h2', mt: 1, mb: 3 })`
+const Bio = Subhead.extend.attrs({ is: 'h2', mt: 1, mb: 3 })`
   color: ${colors.grey};
   font-weight: 400;
   line-height: 1.5;
 `
-const Status = styled(Text).attrs({ is: 'mark', f: 3, mb: 3 })`
+const Status = Text.extend.attrs({ is: 'mark', f: 3, mb: 3 })`
   background-color: #bfe6f9; /* image: linear-gradient(-100deg, #f3fafe, #bfe6f9 95%, #daf1fc); */
   border-radius: .5em;
   padding: 0 .5em;
   margin-left: -0.5em;
-`
-const ID = styled.abbr`
-  font-variant: none;
-  text-decoration: none;
 `
 
 const Column = props => (
@@ -64,7 +65,7 @@ const Column = props => (
 const Portrait = FloatLink.withComponent(Image).extend`
   border-radius: 24px;
   max-width: 50vw;
-  max-height: 75vh;
+  max-height: 64vh;
 `
 
 export default () => (
@@ -76,10 +77,8 @@ export default () => (
       </Column>
       <Column>
         <Name>Lachlan Campbell</Name>
-        <Bio>
-          Web designer-developer and high schooler.
-        </Bio>
-        <Flex align="center">
+        <Bio>Web designer-developer and high schooler.</Bio>
+        <Flex align="center" justify={['center', 'flex-start']}>
           <Avatar
             src="https://cdn.glitch.com/3ddbd40d-f89f-488c-a0eb-0dc4aa1ebc80%2Favatar-pride.png?1500175240431"
             mr={2}

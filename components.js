@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import styled from 'styled-components'
 import { colors } from './style'
 import {
   Flex,
@@ -16,7 +15,8 @@ import {
 import { map, isEmpty, kebabCase, deburr, replace } from 'lodash'
 
 export const mono = {
-  fontFamily: "'SF Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
+  fontFamily:
+    "'SF Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
 }
 
 export const Meta = ({ title = '@lachlanjc', children }) => (
@@ -70,7 +70,7 @@ export const Header = props => (
   />
 )
 
-const Subheader = styled(Flex).attrs({
+const Subheader = Flex.extend.attrs({
   align: 'center',
   justify: 'center',
   color: colors.steel
@@ -83,11 +83,13 @@ const Subheader = styled(Flex).attrs({
 export const SectionHeading = ({ icon, children, ...props }) => (
   <Subheader {...props}>
     <Icon name={icon} fill={colors.grey} size={32} mr={1} />
-    <Subhead my={0} f={3}>{children}</Subhead>
+    <Subhead my={0} f={3}>
+      {children}
+    </Subhead>
   </Subheader>
 )
 
-export const Float = styled(Box)`
+export const Float = Box.extend`
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -101,14 +103,20 @@ export const FloatLink = Float.withComponent(Link).extend`
   }
 `
 
-export const ProjectGrid = styled(Flex).attrs({ px: [2, 3], py: 1, direction: ['column', 'row'], justify: 'center', wrap: true })`
+export const ProjectGrid = Flex.extend.attrs({
+  px: [2, 3],
+  py: 1,
+  direction: ['column', 'row'],
+  justify: 'center',
+  wrap: true
+})`
 `
-const ProjectName = styled(Subhead)`
+const ProjectName = Subhead.extend`
   color: inherit;
 `
-const ProjectDescription = styled(Text)`
+const ProjectDescription = Text.extend`
   color: inherit;
-  opacity: .8;
+  opacity: 0.8;
 `
 
 export const Project = ({ name, url, description, color = colors.white }) => (
@@ -123,7 +131,9 @@ export const Project = ({ name, url, description, color = colors.white }) => (
     mt={2}
     p={[2, 3]}
   >
-    <ProjectName f={4} m={0}>{name}</ProjectName>
+    <ProjectName f={4} m={0}>
+      {name}
+    </ProjectName>
     <ProjectDescription f={[2, 3]} mt={1} mb={0}>
       {description}
     </ProjectDescription>
@@ -160,3 +170,4 @@ export const Footer = ({ file = 'index', ...props }) => (
     </Link>
   </Text>
 )
+

@@ -15,12 +15,12 @@ export const main = [
     name: 'Fossil Funded',
     url: 'lachlanjc.me/fossilfunded',
     description: 'See if your Representative is funded by the fossil fuel industry',
-    color: '#ef8330'
+    color: '#21a9a9'
   },
   {
     name: 'Hack Club',
     url: 'schacks.tech',
-    description: 'After-school coding club I founded at my high school',
+    description: 'My coding club at my high school',
     color: '#e42d40'
   },
   {

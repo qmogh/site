@@ -58,15 +58,10 @@ export const oss = [
   },
   {
     name: 'edu',
-    url: '/edu',
+    url: 'lachlanjc.glitch.me/edu',
     description: 'Hacking on school projects',
     color: '#4786f1'
   }
-  // {
-  //   name: 'random-a11y',
-  //   url: 'randoma11y.com',
-  //   description: 'Vote on a11y-friendly color palettes.'
-  // }
 ]
 
 export const prev = [
@@ -83,15 +78,21 @@ export const prev = [
     color: '#8492A6'
   },
   {
+    name: 'random-a11y',
+    url: 'randoma11y.com',
+    description: 'Vote on a11y-friendly color palettes',
+    color: '#4a24aa'
+  },
+  {
     name: 'bfx',
     url: 'github.com/lachlanjc/bfx',
     description: 'Post to Buffer faster',
-    color: '#4ba5ff'
-  },
-  {
-    name: 'Helpful',
-    url: 'github.com/asm-helpful/helpful-web',
-    description: 'A better help desk',
-    color: '#ff4b4b'
+    color: '#24aa4a'
   }
+  // {
+  //   name: 'Helpful',
+  //   url: 'github.com/asm-helpful/helpful-web',
+  //   description: 'A better help desk',
+  //   color: '#ff4b4b'
+  // }
 ]

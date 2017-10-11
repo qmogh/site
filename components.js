@@ -95,8 +95,9 @@ export const Float = Box.extend`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 `
 export const FloatLink = Float.withComponent(Link).extend`
- text-decoration: none;
- transition: .2s all ease-out;
+  color: ${colors.white};
+  text-decoration: none;
+  transition: .2s all ease-out;
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
@@ -119,17 +120,17 @@ const ProjectDescription = Text.extend`
   opacity: 0.8;
 `
 
-export const Project = ({ name, url, description, color = colors.white }) => (
+export const Project = ({ name, url, description, color = 'white' }) => (
   <FloatLink
-    href={isEmpty(url) ? '#' : url.match(/^\//) ? url : `https://${url}`}
+    href={isEmpty(url) ? '#' : `https://${url}`}
     target="_blank"
     id={kebabCase(deburr(name))}
     bg={color}
-    style={{ color: colors.white }}
+    color="white"
     w={[1, 1 / 3]}
     m={[0, 2]}
     mt={2}
-    p={[2, 3]}
+    p={3}
   >
     <ProjectName f={4} m={0}>
       {name}
@@ -155,7 +156,7 @@ export const Icon = ({
 )
 
 export const Service = ({ href, icon, ...props }) => (
-  <Link target="_blank" href={href} mx={1} {...props}>
+  <Link target="_blank" href={href} mx={2} {...props}>
     <Icon name={icon} fill={colors.blue} />
   </Link>
 )

@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import {
+  Provider,
   Flex,
   Box,
   Banner,
@@ -12,7 +12,7 @@ import {
   Group
 } from 'rebass'
 import { map, merge, lowerCase, kebabCase } from 'lodash'
-import { colors } from '../style'
+import theme, { colors, mx } from '../style'
 import {
   Meta,
   SectionHeading,
@@ -29,51 +29,51 @@ const tenth = [
   {
     name: 'Greenhouse',
     url: 'greenhouse.now.sh',
-    description: 'Website: the cause of climate change.',
+    description: 'Website: the cause of climate change',
     color: '#05df73'
   },
   {
     name: 'Consumerism',
     url: 'twenties.now.sh',
-    description: 'Presentation: 1920s consumerism.',
+    description: 'Presentation: 1920s consumerism',
     color: '#1FB6FF'
   },
   {
     name: 'Astrocolony',
     url: 'astrocolony.now.sh',
-    description: 'Brochure: a Titan space colony.',
+    description: 'Brochure: a Titan space colony',
     color: '#3c4858'
   },
   {
     name: 'L’Éducation Suisse 🇫🇷',
     url: 'swiss-edu.now.sh',
-    description: 'Presentation: Swiss education.',
+    description: 'Presentation: Swiss education',
     color: '#f30804'
   },
   {
     name: 'Sommeil 🇫🇷',
     url: 'sommeil.now.sh',
-    description: 'Brochure: sleep at various ages.',
+    description: 'Brochure: sleep at various ages',
     color: '#283593'
   },
   {
     name: 'Petit Prince 14 🇫🇷',
     url: 'petit-prince-14.now.sh',
-    description: 'Presentation: Le Petit Prince ch. 14.',
+    description: 'Presentation: Le Petit Prince ch. 14',
     color: '#f0a'
   }
 ]
 const groups = [
   {
-    name: 'Hack Club',
-    url: 'schacks.github.io',
-    description: 'My after-school coding club.',
-    color: '#e42d40'
+    name: 'LGBTQA+ Alliance',
+    url: 'scasdpride.github.io',
+    description: 'Pride alliance group at my high school',
+    color: '#F48D3A'
   },
   {
     name: 'TeenShale Data',
     url: 'teenshaledata.lachlanjc.me',
-    description: 'Data parsing for TeenShale Network.',
+    description: 'Data parsing for TeenShale Network',
     color: '#0074D9'
   }
 ]
@@ -85,12 +85,12 @@ const sections = [
 const backgroundImage = 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3'
 // const bg = 'https://images.unsplash.com/photo-1416339684178-3a239570f315'
 
-const Masthead = styled(Banner).attrs({ bg: colors.accent, mb: 3 })`
+const Masthead = Banner.extend.attrs({ bg: colors.accent, mb: 3 })`
   min-height: 32vh;
 `
 
 export default () => (
-  <main>
+  <Provider theme={theme}>
     <Meta title="@lachlanjc/edu" />
     <Masthead>
       <Flex justify="center">
@@ -124,5 +124,5 @@ export default () => (
       </Box>
     ))}
     <Footer file="edu" />
-  </main>
+  </Provider>
 )

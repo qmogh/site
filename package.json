@@ -1,0 +1,21 @@
+{
+  "name": "lachlanjc-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "live": "next start",
+    "build": "next build",
+    "start": "next"
+  },
+  "author": "Lachlan Campbell",
+  "license": "MIT",
+  "dependencies": {
+    "hidden-styled": "^1.0.0-0",
+    "lodash": "^4.17.4",
+    "react": "^15.6.2",
+    "react-box-shadow": "^1.0.1",
+    "react-dom": "^15.6.2",
+    "rebass": "^1.0.0",
+    "next": "^3.2.2"
+  }
+}

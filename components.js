@@ -15,8 +15,7 @@ import {
 import { map, isEmpty, kebabCase, deburr, replace } from 'lodash'
 
 export const mono = {
-  fontFamily:
-    "'SF Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
+  fontFamily: 'SFMono-Regular, Consolas, Menlo, Courier, monospace'
 }
 
 export const Meta = ({ title = '@lachlanjc', children }) => (

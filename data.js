@@ -14,7 +14,7 @@ export const main = [
   {
     name: 'Hack Club',
     url: 'schacks.tech',
-    description: 'My coding club at my high school',
+    description: 'My high school club for coding education',
     color: '#e42d40'
   },
   {
@@ -60,7 +60,7 @@ export const oss = [
     name: 'edu',
     url: 'lachlanjc.glitch.me/edu',
     description: 'Hacking on school projects',
-    color: '#4786f1'
+    color: '#cf0'
   }
 ]
 
@@ -87,7 +87,7 @@ export const prev = [
     name: 'bfx',
     url: 'github.com/lachlanjc/bfx',
     description: 'Post to Buffer faster',
-    color: '#24aa4a'
+    color: '#aa2484'
   }
   // {
   //   name: 'Helpful',

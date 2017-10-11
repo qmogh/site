@@ -45,7 +45,7 @@ const Masthead = Flex.extend.attrs({
   }
 `
 const Name = Heading.extend.attrs({ f: 6, m: 0 })`
-  font-weight: 900;
+  font-weight: 900 !important;
   line-height: 1;
 `
 const Bio = Subhead.extend.attrs({ is: 'h2', color: 'grey', mt: 1, mb: 3 })`

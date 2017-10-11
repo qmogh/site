@@ -1,27 +1,27 @@
 export const main = [
   {
-    name: 'NRA Funded',
-    url: 'lachlanjc.me/nrafunded',
-    description: 'The NRA is paying off Congress at the expense of lives',
-    color: '#ff4949'
-  },
-  {
     name: 'Blink',
     url: 'blink.care',
     description: 'Affordable, accurate communication—coming soon',
     color: '#207aee'
   },
   {
-    name: 'Fossil Funded',
-    url: 'lachlanjc.me/fossilfunded',
-    description: 'See if your Representative is funded by the fossil fuel industry',
-    color: '#21a9a9'
+    name: 'NRA Funded',
+    url: 'lachlanjc.me/nrafunded',
+    description: 'The NRA is paying off Congress at the expense of lives',
+    color: '#ff4949'
   },
   {
     name: 'Hack Club',
     url: 'schacks.tech',
     description: 'My coding club at my high school',
     color: '#e42d40'
+  },
+  {
+    name: 'Fossil Funded',
+    url: 'lachlanjc.me/fossilfunded',
+    description: 'See if your Representative is funded by the fossil fuel industry',
+    color: '#21a9a9'
   },
   {
     name: 'Noodles 2',

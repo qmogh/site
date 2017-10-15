@@ -40,7 +40,7 @@ const Masthead = Flex.extend.attrs({
 })`
   text-align: center;
   ${mx[0]} {
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: left;
   }
 `
@@ -79,11 +79,11 @@ const Portrait = FloatLink.withComponent(Image).extend`
   max-width: 50vw;
   ${mx[0]} {
     border-radius: 24px;
-    max-height: 80vh;
+    max-height: 64vh;
   }
 `
 
-const NameBox = Column.extend.attrs({ py: 2, pl: [null, 4] })`
+const NameBox = Column.extend.attrs({ py: 2, pl: [null, 5] })`
   ${mx[0]} {
     display: flex;
     flex-direction: column;

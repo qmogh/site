@@ -1,7 +1,7 @@
 export const main = [
   {
     name: 'Blink',
-    url: 'blink.care',
+    url: 'www.blink.care',
     description: 'Affordable, accurate communication—coming soon',
     color: '#207aee'
   },
@@ -14,7 +14,7 @@ export const main = [
   {
     name: 'Hack Club',
     url: 'schacks.tech',
-    description: 'My high school club for coding education',
+    description: 'My club at my high school for teaching coding',
     color: '#e42d40'
   },
   {
@@ -73,8 +73,8 @@ export const prev = [
   },
   {
     name: 'Congressional App Challenge',
-    url: 'www.congressionalappchallenge.us/2015-winners',
-    description: '2015 winner for PA-05 with Noodles',
+    url: 'www.congressionalappchallenge.us/2017-winners',
+    description: '2017 + 2015 winner, PA-05',
     color: '#8492A6'
   },
   {

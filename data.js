@@ -75,19 +75,19 @@ export const prev = [
     name: 'Congressional App Challenge',
     url: 'www.congressionalappchallenge.us/2017-winners',
     description: '2017 + 2015 winner, PA-05',
-    color: '#8492A6'
+    color: '#f8b700'
   },
   {
     name: 'random-a11y',
     url: 'randoma11y.com',
     description: 'Vote on a11y-friendly color palettes',
-    color: '#4a24aa'
+    color: '#592dea'
   },
   {
     name: 'bfx',
     url: 'github.com/lachlanjc/bfx',
     description: 'Post to Buffer faster',
-    color: '#aa2484'
+    color: '#009eeb'
   }
   // {
   //   name: 'Helpful',

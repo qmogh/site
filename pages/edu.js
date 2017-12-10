@@ -67,7 +67,7 @@ const groups = [
   {
     name: 'LGBTQA+ Alliance',
     url: 'scasdpride.github.io',
-    description: 'Pride alliance group at my high school',
+    description: 'Pride group at my high school',
     color: '#F48D3A'
   },
   {

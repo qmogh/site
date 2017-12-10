@@ -1,18 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
+import { Head } from 'react-static'
 import { colors } from './style'
-import {
-  Flex,
-  Box,
-  Heading,
-  Subhead,
-  Text,
-  Link,
-  Lead,
-  Image,
-  BlockLink
-} from 'rebass'
-import { map, isEmpty, kebabCase, deburr, replace } from 'lodash'
+import { Flex, Box, Heading, Subhead, Text, Link, Image } from 'rebass'
+import { isEmpty, kebabCase, deburr, replace } from 'lodash'
 
 export const mono = {
   fontFamily: 'SFMono-Regular, Consolas, Menlo, Courier, monospace'
@@ -80,9 +70,7 @@ export const ProjectGrid = Flex.extend.attrs({
   wrap: true
 })`
 `
-const ProjectName = Subhead.extend`
-  color: inherit;
-`
+const ProjectName = Subhead.extend`color: inherit;`
 const ProjectDescription = Text.extend`
   color: inherit;
   opacity: 0.8;

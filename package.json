@@ -3,22 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "serve": "next start",
-    "start": "next"
+    "dev": "react-static start",
+    "build": "react-static build",
+    "start": "serve dist -p 3000",
+    "postinstall": "npm run build"
   },
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.1",
-    "hidden-styled": "^1.0.0-0",
     "lodash": "^4.17.4",
-    "next": "^4.2.1",
     "react": "^16.2.0",
     "react-box-shadow": "^1.0.1",
     "react-dom": "^16.2.0",
+    "react-static": "^4.5.0",
     "rebass": "^1.0.4",
-    "unfetch": "^3.0.0"
+    "serve": "^6.4.1"
   }
 }

@@ -1,17 +1,6 @@
 import React from 'react'
-import {
-  Provider,
-  Flex,
-  Box,
-  Banner,
-  Heading,
-  Subhead,
-  Text,
-  Lead,
-  Link,
-  Group
-} from 'rebass'
-import { map, merge, lowerCase, kebabCase } from 'lodash'
+import { Provider, Flex, Box, Banner, Heading, Text, Group } from 'rebass'
+import { kebabCase } from 'lodash'
 import theme, { colors, mx } from '../style'
 import {
   Meta,
@@ -81,14 +70,11 @@ const sections = [
   ['Tenth grade', 'assignment', tenth],
   ['Groups', 'group_work', groups]
 ]
-
-const backgroundImage = 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3'
-// const bg = 'https://images.unsplash.com/photo-1416339684178-3a239570f315'
-
+const backgroundImage =
+  'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3' // const bg = 'https://images.unsplash.com/photo-1416339684178-3a239570f315'
 const Masthead = Banner.extend.attrs({ bg: colors.accent, mb: 3 })`
   min-height: 32vh;
 `
-
 export default () => (
   <Provider theme={theme}>
     <Meta title="@lachlanjc/edu" />
@@ -108,7 +94,7 @@ export default () => (
       </Heading>
     </Masthead>
     {sections.map(section => (
-      <Box id={kebabCase(section[0])} key={lowerCase(section[0])} py={2}>
+      <Box id={kebabCase(section[0])} key={kebabCase(section[0])} py={2}>
         <SectionHeading icon={section[1]} children={section[0]} />
         <ProjectGrid>
           {section[2].map(item => (

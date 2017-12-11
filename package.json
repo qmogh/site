@@ -4,14 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "react-static start",
-    "build": "react-static build",
+    "build": "react-static build && echo lachlanjc.me > dist/CNAME",
     "start": "serve dist -p 3000",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/lachlanjc/lachlanjc.github.io -b master",
+    "go": "npm run build && npm run deploy"
   },
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.1",
+    "gh-pages": "^1.1.0",
     "lodash": "^4.17.4",
     "react": "^16.2.0",
     "react-box-shadow": "^1.0.1",

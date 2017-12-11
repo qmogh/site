@@ -2,6 +2,6 @@
 
 My personal website. Built with React Static and styled-components.
 
-Live: [**lachlanjc.glitch.me**](https://lachlanjc.glitch.me)
+Live: [**lachlanjc.me**](https://lachlanjc.me)
 
-MIT license
+MIT License

@@ -15,9 +15,9 @@ import {
 
 const eleventh = [
   {
-    name: 'Moby Dick',
+    name: 'Whales for Three',
     url: 'lachlanjc.me/edu/moby-dick',
-    description: 'Essay: Herman Melville’s novel',
+    description: 'Essay: Moby Dick',
     color: '#0069ff'
   },
   {

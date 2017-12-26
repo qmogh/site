@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "x0 dev src/App.js -op 3000",
     "start": "serve dist -p 3000",
-    "build": "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components' && cp -r static dist/static",
+    "build": "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components'",
+    "edu": "npm run build && cp dist/edu/index.html ../edu/index.html",
     "deploy": "gh-pages -d dist -r https://github.com/lachlanjc/lachlanjc.github.io -b master",
     "go": "npm run build && npm run deploy"
   },

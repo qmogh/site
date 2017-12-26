@@ -114,7 +114,7 @@ export const Service = ({ href, icon, ...props }) => (
 export const Footer = ({ file = 'index', ...props }) => (
   <Text center py={3}>
     <Link
-      href={`https://github.com/lachlanjc/site/blob/glitch/pages/${file}.js`}
+      href={`https://github.com/lachlanjc/site/blob/glitch/src/pages/${file}.js`}
       f={5}
     >
       ⌨️

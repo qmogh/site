@@ -13,6 +13,20 @@ import {
   Footer
 } from '../components'
 
+const eleventh = [
+  {
+    name: 'Moby Dick',
+    url: 'lachlanjc.me/edu/moby-dick',
+    description: 'Essay: Herman Melville’s novel',
+    color: '#0069ff'
+  },
+  {
+    name: 'Their Eyes Were Watching God',
+    url: 'lachlanjc.me/edu/watching-god',
+    description: 'Essay: Zora Neale Hurston’s novel',
+    color: '#ffa235'
+  }
+]
 const tenth = [
   {
     name: 'Greenhouse',
@@ -53,20 +67,21 @@ const tenth = [
 ]
 const groups = [
   {
+    name: 'SCHacks',
+    url: 'schacks.tech',
+    description: 'My coding club at my high school',
+    color: '#ff4949'
+  },
+  {
     name: 'LGBTQA+ Alliance',
     url: 'scasdpride.github.io',
     description: 'Pride group at my high school',
     color: '#F48D3A'
-  },
-  {
-    name: 'TeenShale Data',
-    url: 'teenshaledata.lachlanjc.me',
-    description: 'Data parsing for TeenShale Network',
-    color: '#0074D9'
   }
 ]
 const sections = [
-  ['Tenth grade', 'assignment', tenth],
+  ['Eleventh grade', 'today', eleventh],
+  ['Tenth grade', 'access_time', tenth],
   ['Groups', 'group_work', groups]
 ]
 const backgroundImage =

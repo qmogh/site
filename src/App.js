@@ -26,25 +26,6 @@ const App = props => (
       <meta charSet="UTF-8" />
       <title>Lachlan Campbell – @lachlanjc</title>
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-      {[16, 32].map(size => (
-        <link
-          rel="icon"
-          type="image/png"
-          href={`/static/favicon-${size}x${size}.png`}
-          sizes={`${size}x${size}`}
-          key={`icon-${size}x${size}`}
-        />
-      ))}
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/static/apple-touch-icon.png"
-      />
-      <link
-        rel="mask-icon"
-        href="/static/safari-pinned-tab.svg"
-        color={colors.base}
-      />
       <link rel="shortcut icon" href="/static/favicon.ico" />
       <meta name="theme-color" content={colors.base} />
       <Provider theme={theme}>

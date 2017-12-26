@@ -1,9 +1,8 @@
 import React from 'react'
-import { Provider, Flex, Box, Banner, Heading, Text, Group } from 'rebass'
+import { Flex, Box, Banner, Heading, Text, Group } from 'rebass'
 import { kebabCase } from 'lodash'
-import theme, { colors, mx } from '../style'
+import { colors, mx } from '../style'
 import {
-  Meta,
   SectionHeading,
   Float,
   FloatLink,
@@ -76,8 +75,7 @@ const Masthead = Banner.extend.attrs({ bg: colors.accent, mb: 3 })`
   min-height: 32vh;
 `
 export default () => (
-  <Provider theme={theme}>
-    <Meta title="@lachlanjc/edu" />
+  <React.Fragment>
     <Masthead>
       <Flex justify="center">
         <Icon name="school" />
@@ -110,5 +108,5 @@ export default () => (
       </Box>
     ))}
     <Footer file="edu" />
-  </Provider>
+  </React.Fragment>
 )

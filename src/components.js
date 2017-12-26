@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import { colors } from './style'
 import { Flex, Box, Heading, Subhead, Text, Link, Image } from 'rebass'
 import { isEmpty, kebabCase, deburr, replace } from 'lodash'
@@ -7,13 +6,6 @@ import { isEmpty, kebabCase, deburr, replace } from 'lodash'
 export const mono = {
   fontFamily: 'SFMono-Regular, Consolas, Menlo, Courier, monospace'
 }
-
-export const Meta = ({ title = '@lachlanjc', children }) => (
-  <Head>
-    <title children={title} />
-    {children}
-  </Head>
-)
 
 export const Header = props => (
   <Box
@@ -70,7 +62,9 @@ export const ProjectGrid = Flex.extend.attrs({
   wrap: true
 })`
 `
-const ProjectName = Subhead.extend`color: inherit;`
+const ProjectName = Subhead.extend`
+  color: inherit;
+`
 const ProjectDescription = Text.extend`
   color: inherit;
   opacity: 0.8;

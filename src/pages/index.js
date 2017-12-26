@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Provider,
   Flex,
   Box,
   Column,
@@ -12,9 +11,8 @@ import {
   Image
 } from 'rebass'
 import { kebabCase } from 'lodash'
-import theme, { colors, mx } from '../style'
+import { colors, mx } from '../style'
 import {
-  Meta,
   SectionHeading,
   Float,
   FloatLink,
@@ -90,8 +88,7 @@ const NameBox = Column.extend.attrs({ py: 2, pl: [null, 5] })`
 `
 
 export default () => (
-  <Provider theme={theme}>
-    <Meta title="Lachlan Campbell – @lachlanjc" />
+  <React.Fragment>
     <Masthead>
       <PortraitBox>
         <Portrait src="https://cdn.glitch.com/3ddbd40d-f89f-488c-a0eb-0dc4aa1ebc80%2Fstatic%2Fportrait.jpg?1500175195551" />
@@ -144,5 +141,5 @@ export default () => (
       </Box>
     ))}
     <Footer file="index" />
-  </Provider>
+  </React.Fragment>
 )

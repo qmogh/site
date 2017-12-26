@@ -58,7 +58,7 @@ export const oss = [
   },
   {
     name: 'edu',
-    url: 'lachlanjc.glitch.me/edu',
+    url: 'lachlanjc.me/edu',
     description: 'Hacking on school projects',
     color: '#cf0'
   }

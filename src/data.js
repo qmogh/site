@@ -1,8 +1,14 @@
 export const main = [
   {
+    name: 'Hack Club Design System',
+    url: 'github.com/hackclub/design-system',
+    description: 'Organization-wide web design system for Hack Club',
+    color: '#e42d40'
+  },
+  {
     name: 'Blink',
     url: 'www.blink.care',
-    description: 'Affordable, accurate communication—coming soon',
+    description: 'Affordable, accurate communication (PennApps XVI)',
     color: '#207aee'
   },
   {
@@ -10,12 +16,6 @@ export const main = [
     url: 'lachlanjc.me/nrafunded',
     description: 'The NRA is paying off Congress at the expense of lives',
     color: '#ff4949'
-  },
-  {
-    name: 'Hack Club',
-    url: 'schacks.tech',
-    description: 'My club at my high school for teaching coding',
-    color: '#e42d40'
   },
   {
     name: 'Fossil Funded',

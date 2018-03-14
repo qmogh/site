@@ -25,6 +25,18 @@ const eleventh = [
     url: 'lachlanjc.me/edu/watching-god',
     description: 'Essay: Zora Neale Hurston’s novel',
     color: '#ffa235'
+  },
+  {
+    name: 'Suicide',
+    url: 'lachlanjc.me/edu/suicide',
+    description: 'Website: Teen suicide',
+    color: '#1f2d3d'
+  },
+  {
+    name: 'Future',
+    url: 'lachlanjc-future.now.sh',
+    description: 'Website: Predictions for my life',
+    color: '#0069ff'
   }
 ]
 const tenth = [

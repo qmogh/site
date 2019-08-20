@@ -1,4 +1,3 @@
-node_modules/
-dist/index.html
-dist/edu
-package-lock.json
+node_modules
+.next
+out

@@ -4,7 +4,7 @@ export const Banner = props => (
   <Box
     {...props}
     sx={{
-      py: [4, 5],
+      py: [4, 5, 6],
       h1: {
         fontSize: [6, 7],
         fontWeight: 'heading',
@@ -15,10 +15,7 @@ export const Banner = props => (
       h2: {
         fontSize: [3, 4],
         fontWeight: 'light',
-        mb: 2,
-        a: {
-          color: 'red'
-        }
+        mb: 4
       },
       p: {
         mb: 4

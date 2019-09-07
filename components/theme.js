@@ -39,7 +39,7 @@ const theme = merge(base, {
     text: palette.black,
     background: palette.snow,
     elevated: palette.white,
-    primary: palette.cyan,
+    primary: palette.blue,
     secondary: palette.orange,
     muted: palette.muted,
     accent: palette.orange,

@@ -71,23 +71,24 @@ export const Tiles = props => (
         transition: 'transform .125s ease-in-out',
         ':hover': {
           transform: 'scale(1.025) translateY(-4px)'
+        },
+        '> a:first-child': {
+          display: 'block',
+          m: [-3, -4],
+          mb: [2, 3, 4]
         }
       },
       h2: {
         fontSize: [2, 3],
         mb: 1,
-          lineHeight: 'heading',
+        lineHeight: 'heading',
         a: {
           color: 'text',
           textDecoration: 'none'
         }
       },
       p: {
-        my: 0,
-        '&:first-child': {
-          m: [-3, -4],
-        mb: [2, 3, 4]
-        }
+        my: 0
       },
       img: {
         display: 'block',

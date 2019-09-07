@@ -8,7 +8,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next",
-    "deploy": "gh-pages -d out -r https://github.com/lachlanjc/lachlanjc.github.io -b master"
+    "deploy": "echo 'lachlanjc.me' >> out/CNAME && gh-pages -d out -r https://github.com/lachlanjc/lachlanjc.github.io -b master"
   },
   "dependencies": {
     "@hackclub/icons": "^0.0.2",

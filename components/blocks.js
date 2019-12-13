@@ -56,7 +56,7 @@ export const Tiles = props => (
         m: 0,
         display: 'grid',
         gridGap: [3, 4],
-        gridTemplateColumns: 'repeat(auto-fit, minmax(384px, 1fr))'
+        gridTemplateColumns: [null, 'repeat(auto-fit, minmax(384px, 1fr))]'
       },
       li: {
         bg: 'elevated',
@@ -109,7 +109,7 @@ export const List = props => (
         m: 0,
         listStyle: 'none',
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))',
+        gridTemplateColumns: [null, 'repeat(auto-fit, minmax(256px, 1fr))'],
         gridGap: [3, 4]
       },
       a: {

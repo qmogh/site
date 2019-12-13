@@ -6,9 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "next",
-    "deploy": "echo 'lachlanjc.me' >> out/CNAME && gh-pages -d out -r https://github.com/lachlanjc/lachlanjc.github.io -b master"
+    "now-build": "next build",
+    "start": "next"
   },
   "dependencies": {
     "@hackclub/icons": "^0.0.2",

@@ -1,5 +1,5 @@
 import { Box, Flex, Link as A } from 'rebass'
-import { Styled, useColorMode } from 'theme-ui'
+import { useColorMode } from 'theme-ui'
 import Link from 'next/link'
 import Icon from './icon'
 import Avatar from './avatar'

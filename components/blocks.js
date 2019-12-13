@@ -69,7 +69,7 @@ export const Tiles = props => (
         ':hover': {
           transform: 'scale(1.025) translateY(-4px)'
         },
-        '> a:first-child': {
+        '> a:first-of-type': {
           display: 'block',
           m: [-3, -4],
           mb: [2, 3, 4]

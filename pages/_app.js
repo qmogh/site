@@ -10,19 +10,8 @@ const name = 'Lachlan Campbell – @lachlanjc'
 const desc = 'I’m an 18-year-old designer-developer based in NYC.'
 
 export default class extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {}
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
-    }
-
-    return { pageProps }
-  }
-
   render() {
     const { Component, pageProps } = this.props
-
     return (
       <>
         <Head>

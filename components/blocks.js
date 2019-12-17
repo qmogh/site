@@ -14,7 +14,7 @@ export const Banner = props => (
       },
       h2: {
         fontSize: [3, 4],
-        fontWeight: 'light',
+        fontWeight: 'normal',
         mb: 4
       },
       p: {
@@ -60,6 +60,7 @@ export const Tiles = props => (
       },
       li: {
         bg: 'elevated',
+        color: 'elevatedText',
         p: [3, 4],
         borderRadius: 'extra',
         boxShadow: 'card',
@@ -80,7 +81,7 @@ export const Tiles = props => (
         mb: 1,
         lineHeight: 'heading',
         a: {
-          color: 'text',
+          color: 'inherit',
           textDecoration: 'none'
         }
       },

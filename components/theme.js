@@ -34,6 +34,7 @@ const theme = merge(base, {
   space,
   fontSizes,
   initialColorMode: 'light',
+  useColorSchemeMediaQuery: true,
   colors: {
     ...palette,
     text: palette.black,

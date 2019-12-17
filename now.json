@@ -8,5 +8,8 @@
       "source": "/(.+)",
       "destination": "https://lachlanjc.github.io/$1"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }

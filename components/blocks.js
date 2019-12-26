@@ -92,7 +92,6 @@ export const Tiles = props => (
         display: 'block',
         width: '100%',
         maxWidth: '100%',
-        height: 256,
         objectFit: 'cover',
         objectPosition: 'center'
       },

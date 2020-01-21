@@ -143,7 +143,7 @@ export default props => {
             <Icon glyph="github" size={36} />
           </a>
           <a
-            href="https://instagram.com/@lachlan.jc"
+            href="https://instagram.com/lachlan.jc"
             title="Instagram"
             target="_blank"
             variant="styles.navitem"

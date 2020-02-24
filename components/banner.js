@@ -54,7 +54,7 @@ const Banner = ({ children }) => (
             mb: 3
           }}
         >
-          My&nbsp;name&nbsp;is
+          Hey! I’m
           <br />
           Lachlan Campbell.
         </Heading>

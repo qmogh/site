@@ -1,10 +1,9 @@
-import { Banner, Tiles, Container, List } from '../components/blocks'
+import Banner from '../components/banner'
+import { Tiles, List } from '../components/blocks'
+import { Header, Footer, Rainbow } from '../components/layout'
+import { Container } from 'theme-ui'
 
 <Banner>
-
-# Lachlan Campbell
-
-## Web designer-developer, NYU ’23. 🗽 they/them
 
 - [Twitter](https://twitter.com/lachlanjc)
 - [GitHub](https://github.com/lachlanjc)
@@ -12,6 +11,10 @@ import { Banner, Tiles, Container, List } from '../components/blocks'
 - [Instagram](https://instagram.com/@lachlan.jc)
 
 </Banner>
+
+<Header />
+
+<Container variant="container">
 
 ## Featured projects
 
@@ -67,3 +70,9 @@ import { Banner, Tiles, Container, List } from '../components/blocks'
 - [Noodles _Cook better with all your recipes in one place. First app, 2014._](https://getnoodl.es)
 
 </List>
+
+</Container>
+
+<Footer />
+
+<Rainbow />

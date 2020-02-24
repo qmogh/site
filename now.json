@@ -2,14 +2,11 @@
   "version": 2,
   "name": "lachlanjc",
   "public": true,
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "rewrites": [
     {
       "source": "/(.+)",
       "destination": "https://lachlanjc.github.io/$1"
     }
   ],
-  "github": {
-    "silent": true
-  }
+  "github": { "silent": true }
 }

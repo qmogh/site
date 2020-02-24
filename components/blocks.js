@@ -1,40 +1,4 @@
-import { Box } from 'rebass'
-
-export const Banner = props => (
-  <Box
-    {...props}
-    sx={{
-      py: [4, 5, 6],
-      h1: {
-        fontSize: [6, 7],
-        fontWeight: 'heading',
-        lineHeight: 'tight',
-        mt: [0, -2, -3],
-        mb: 3
-      },
-      h2: {
-        fontSize: [3, 4],
-        fontWeight: 'normal',
-        mb: 4
-      },
-      p: {
-        mb: 4
-      },
-      ul: {
-        listStyle: 'none',
-        display: 'flex',
-        p: 0,
-        m: 0
-      },
-      li: {
-        mr: 3
-      },
-      a: {
-        variant: 'styles.navitem'
-      }
-    }}
-  />
-)
+import { Box } from 'theme-ui'
 
 export const Container = ({ wide, ...props }) => (
   <Box
@@ -59,16 +23,11 @@ export const Tiles = props => (
         gridTemplateColumns: [null, 'repeat(auto-fit, minmax(384px, 1fr))']
       },
       li: {
+        variant: 'cards.interactive',
         bg: 'elevated',
         color: 'elevatedText',
-        p: [3, 4],
-        borderRadius: 'extra',
-        boxShadow: 'card',
-        overflow: 'hidden',
-        position: 'relative',
-        transition: 'transform .125s ease-in-out',
-        ':hover': {
-          transform: 'scale(1.025) translateY(-4px)'
+        a: {
+          display: 'block'
         },
         '> a:first-of-type': {
           display: 'block',
@@ -115,14 +74,15 @@ export const List = props => (
       a: {
         fontWeight: 'bold',
         color: 'primary',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        fontSize: 2
       },
       em: {
         display: 'block',
         color: 'muted',
         fontWeight: 'body',
         fontStyle: 'normal',
-        fontSize: 0
+        fontSize: 1
       },
       ...props.sx
     }}

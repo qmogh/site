@@ -73,7 +73,7 @@ export const List = props => (
       },
       a: {
         fontWeight: 'bold',
-        color: 'primary',
+        color: 'accent',
         textDecoration: 'none',
         fontSize: 2
       },

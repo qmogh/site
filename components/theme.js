@@ -1,5 +1,4 @@
 import base from '@hackclub/theme'
-import { merge } from 'lodash'
 
 export const palette = {
   darker: '#121217',
@@ -24,7 +23,8 @@ export const palette = {
   instagram: '#e1306c'
 }
 
-const theme = merge(base, {
+const theme = {
+  ...base,
   colors: {
     ...palette,
     text: palette.light,
@@ -34,7 +34,7 @@ const theme = merge(base, {
     primary: palette.fuschia,
     secondary: palette.lilac,
     muted: palette.lilac,
-    accent: palette.pink,
+    accent: palette.yellow,
     modes: {
       dark: {
         text: palette.light,
@@ -44,7 +44,7 @@ const theme = merge(base, {
         primary: palette.fuschia,
         secondary: palette.pink,
         accent: palette.yellow,
-        muted: palette.lilac
+        muted: palette.muted
       }
     }
   },
@@ -55,19 +55,7 @@ const theme = merge(base, {
       'Whyte, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace'
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125,
-    tight: 0.875
-  },
-  fontWeights: {
-    light: 300,
-    body: 400,
-    medium: 500,
-    bold: 700,
-    heading: 900
   }
-})
+}
 
 export default theme

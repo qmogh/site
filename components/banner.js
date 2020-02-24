@@ -54,7 +54,7 @@ const Banner = ({ children }) => (
             mb: 3
           }}
         >
-          Hey! I’m
+          Hey, I’m
           <br />
           Lachlan Campbell.
         </Heading>
@@ -87,7 +87,7 @@ const Banner = ({ children }) => (
             fontWeight: 'normal'
           }}
         >
-          I’m a web designer-developer.
+          I’m a web designer-developer,
           <br />
           NYU&nbsp;’23, studying Interactive Media&nbsp;Arts.
         </Text>

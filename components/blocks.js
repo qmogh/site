@@ -51,6 +51,7 @@ export const Tiles = props => (
         display: 'block',
         width: '100%',
         maxWidth: '100%',
+        maxHeight: 284,
         objectFit: 'cover',
         objectPosition: 'center'
       },

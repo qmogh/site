@@ -89,7 +89,8 @@ const Banner = ({ children }) => (
         >
           I’m a web designer-developer,
           <br />
-          NYU&nbsp;’23, studying Interactive Media&nbsp;Arts.
+          head of storytelling @ <a href="https://hackclub.com/">Hack Club</a>,
+          <br />& NYU&nbsp;’23, studying Interactive Media&nbsp;Arts.
         </Text>
         {children}
       </Slide>

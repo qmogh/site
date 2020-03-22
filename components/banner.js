@@ -19,6 +19,7 @@ const Banner = ({ children }) => (
     <Container
       variant="copyPlus"
       sx={{
+        px: 3,
         textAlign: 'center',
         textShadow:
           '0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.25)',
@@ -84,12 +85,14 @@ const Banner = ({ children }) => (
             mb: [4, 5],
             lineHeight: 'caption',
             fontSize: [3, 4],
-            fontWeight: 'normal'
+            fontWeight: 'normal',
+            a: { fontWeight: 'bold' }
           }}
         >
           I’m a web designer-developer,
           <br />
-          head of storytelling @ <a href="https://hackclub.com/">Hack Club</a>,
+          head of storytelling @{' '}
+          <a href="https://hackclub.com/">Hack&nbsp;Club</a>,
           <br />& NYU&nbsp;’23, studying Interactive Media&nbsp;Arts.
         </Text>
         {children}

@@ -95,7 +95,7 @@ export const Footer = () => (
       <Icon glyph="twitter" size={36} />
     </NavLink>
     <NavLink
-      href="https://github.com/lachlanjc/notebook"
+      href="https://github.com/lachlanjc"
       title="GitHub"
       target="_blank"
     >
@@ -109,9 +109,8 @@ export const Footer = () => (
       <Icon glyph="instagram" size={36} />
     </NavLink>
     <NavLink
-      href="mailto:lachlan@hackpenn.com"
+      href="mailto:lachlan@hackclub.com"
       title="Email"
-      variant="styles.NavLink"
     >
       <Icon glyph="email" size={36} />
     </NavLink>
